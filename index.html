@@ -12,71 +12,107 @@
   </head>
   <body>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Zachary Smith</a>
+    <nav class="navbar navbar-expand-lg border-bottom" id="welcome">
+      <div class="container">
+        <a class="navbar-brand" href="#welcome">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link text-dark" href="#my-projects">My Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Projects</a>
+              <a class="nav-link text-dark" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link text-dark" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!--Hero Content-->
-    <div class="container">
+    <div class="banner text-center">
+      <h1 class="pt-4">Zachary Smith</h1>
+      <p class="text-secondary">Full Stack Web Developer<br>Altcademy Student</p>
+        <a href="https://www.linkedin.com/" class="link-dark"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href="https://github.com/zachsmith2011" class="link-dark"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="https://twitter.com" class="link-dark"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+    </div>
+    <!--My Projects-->
+    <div class="container mt-5 bg-dark bg-gradient text-light rounded-5 p-5" id="my-projects">
       <div class="row">
-        <div class="col-12 col-lg-6">
-          <img src="images/Thumbnail.jpg" class="img-fluid rounded-circle p-3 d-block mx-auto">
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="about-me">
-            <h3 class="text-center mt-5">About Me</h3>
-            <p class="text-center">This is going to be a paragraph about me. This is going to be a paragraph about me. This is going to be a paragraph about me. This is going to be a paragraph about me. This is going to be a paragraph about me. This is going to be a paragraph about me.</p>
-            <div class="d-flex justify-content-around px-5">
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
+        <h3 class="mb-3">My Projects</h3>
+        <div class="col-12 col-md-6 col-xl-6 mb-5">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://super-mousse-589c2d.netlify.app/"><img src="https://picsum.photos/300" class="img-fluid rounded-3 project-img d-block mx-auto"></a>
             </div>
+            <div class="col-6 my-auto">
+              <h4><a href="https://super-mousse-589c2d.netlify.app/" class="link-light">Apple Clone</a></h4>
+              <p>Clone of Apple website with HTML and custom CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-6 mb-5">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://thriving-kelpie-219b19.netlify.app/"><img src="https://picsum.photos/300" class="img-fluid rounded-3 project-img d-block mx-auto"></a>
+            </div>
+            <div class="col-6 my-auto">
+              <h4><a href="https://thriving-kelpie-219b19.netlify.app/" class="link-light">Newsweek Clone</a></h4>
+              <p>Clone of Newsweek with HTML and Bootstrap 3 and reponsive grid system</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-6 mb-5">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://elaborate-semolina-79a3a4.netlify.app/"><img src="https://picsum.photos/300" class="img-fluid rounded-3 project-img d-block mx-auto w-100"></a>
+            </div>
+            <div class="col-6 my-auto">
+              <h4><a href="https://elaborate-semolina-79a3a4.netlify.app/" class="link-light">Airbnb News Clone</a></h4>
+              <p>Clone of Airbnb News website using HTML and CSS utilizing Bootstrap 4 and flexbox model</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-6 mb-5">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://picsum.photos/300" class="img-fluid rounded-3 project-img d-block mx-auto">
+            </div>
+            <div class="col-6 my-auto">
+              <h4><a href="https://super-mousse-589c2d.netlify.app/" class="link-light">Placeholder Clone</a></h4>
+              <p>This is a description about the project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About Me-->
+    <div class="container" id="about-me">
+      <div class="row">
+        <div class="col-12 col-lg-6 my-auto">
+          <img src="images/Thumbnail.jpg" class="img-fluid rounded-5 p-3 d-block mx-auto thumbnail">
+        </div>
+        <div class="col-12 col-lg-6 my-auto">
+          <div>
+            <h3 class="text-center">About Me</h3>
+            <p class="text-center">I am a former healthcare professional turned Web Developer looking to make my entrance into the world of code. As an alum of Altcademy's Full Stack Program, I am excited to see where this field will take me. I am also learning to speak Spanish, with the ultimate goal of traveling throughout Latin America and perhaps exploring career opportunities abroad.</p>
           </div>
         </div>
         </div>
       </div>
     </div>
 
-
-    <!--My Projects-->
-    <div class="container mt-5">
-      <div class="row justify-content-around">
-        <div class="col-12 col-md-6 col-lg-3">
-          <p class="text-center">Project 1</p>
-          <img src="https://picsum.photos/300" class="img-fluid rounded-5 project-img d-block mx-auto">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <p class="text-center">Project 2</p>
-          <img src="https://picsum.photos/300" class="img-fluid rounded-5 project-img d-block mx-auto">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <p class="text-center">Project 3</p>
-          <img src="https://picsum.photos/300" class="img-fluid rounded-5 project-img d-block mx-auto">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <p class="text-center">Project 4</p>
-          <img src="https://picsum.photos/300" class="img-fluid rounded-5 project-img d-block mx-auto">
-        </div>
-      </div>
-    </div>
+    <footer class="bg-secondary bg-gradient text-light text-center pt-5 mt-3" id="contact">
+      <h5 class="text-decoration-underline">Contact</h5>
+      <p>Email: emailgoeshere@gmail.com</p>
+      <p>Phone: 1(222)-333-4444</p>
+    </footer>
     <!--JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>

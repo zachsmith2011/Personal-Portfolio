@@ -1,8 +1,31 @@
+body {
+  background-color: rgb(243, 250, 255);
+}
+
+#my-projects a {
+  text-decoration: none;
+}
+
+/* Nav */
 nav {
   background-color: rgb(255, 239, 224);
 }
 
 /* About Me */
-
+.thumbnail {
+  transform: scale(.75);
+}
 
 /* My Projects */
+@media (max-width: 768px) {
+  .project-column {
+    order: 1;
+  }
+  .img-column {
+    order:2;
+  }
+}
+
+footer {
+  height: 200px;
+}
