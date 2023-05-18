@@ -2,14 +2,18 @@ body {
   background-color: rgb(243, 250, 255);
 }
 
-#my-projects a {
-  text-decoration: none;
-}
+
 
 /* Nav */
 nav {
   background-color: rgb(255, 239, 224);
 }
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* About Me */
 .thumbnail {
@@ -26,6 +30,26 @@ nav {
   }
 }
 
+
+#my-projects a {
+  text-decoration: none;
+}
+
+#my-projects a:hover {
+  text-decoration: underline;
+}
+
+#my-projects img:hover {
+  border: 2px solid white;
+}
+ #my-projects img {
+  aspect-ratio: 1.5;
+ }
+
+/* Footer */
 footer {
-  height: 200px;
+  height: auto;
+  background-image: url(images/dolphin.jpg);
+  background-position: 50% 40%;
+  background-size: cover;
 }
